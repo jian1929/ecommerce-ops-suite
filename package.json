@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-ops-suite",
+  "version": "1.0.0",
+  "description": "电商运营自动化技能包 - 竞品监控、库存预警、价格追踪",
+  "author": "auto-company",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "competitor-monitor",
+      "price": 29,
+      "description": "电商竞品监控"
+    },
+    {
+      "name": "inventory-alert", 
+      "price": 0,
+      "description": "库存预警"
+    },
+    {
+      "name": "price-tracker",
+      "price": 0,
+      "description": "价格追踪"
+    }
+  ]
+}

@@ -1,81 +1,72 @@
 ---
-name: ecommerce_skills_bundle
-description: Complete e-commerce skills bundle for Shopify, WooCommerce, Amazon sellers. Includes competitive monitoring, social media automation, and analytics dashboards.
+name: ecommerce-ops-suite
+description: 电商运营套装 - 竞品监控、库存预警、价格追踪。24小时自动化运营，省时省力。
 version: 1.0.0
-category: business
-tags: [ecommerce, shopify, amazon, analytics, social-media, competitive-intelligence]
-pricing: [free, paid]
+author: auto-company
+tags:
+  - ecommerce
+  - automation
+  - competitor-analysis
+  - inventory
+  - pricing
+triggers:
+  - 电商运营
+  - 竞品监控
+  - 库存预警
+  - 价格追踪
+  - 电商自动化
 ---
 
-# E-Commerce Skills Bundle
+# Ecommerce Ops Suite
 
-A complete toolkit for e-commerce businesses to monitor competition, automate social media, and analyze performance.
+电商运营自动化技能包，包含三大核心能力：
 
-## Skills Included
+## 功能模块
 
-### 1. Competitive Monitor (Paid - $29/mo)
-Monitor competitor prices, products, and reviews.
+### 1. 竞品监控 (Competitor Monitor)
+自动追踪竞品价格、评分、上新动态。
 
-**Use when:**
-- Track competitor pricing changes
-- Monitor product launches
-- Analyze customer reviews
-- Set up price alerts
+### 2. 库存预警 (Inventory Alert)
+监控库存水位，低于阈值自动告警。
 
-**Supported:** Amazon, Shopify, WooCommerce, Etsy, eBay, Walmart, TikTok Shop
+### 3. 价格追踪 (Price Tracker)
+追踪商品价格历史，降价时自动提醒。
 
-### 2. Social Poster (Free)
-Generate and schedule social media content for e-commerce.
+## 使用场景
 
-**Use when:**
-- Create product posts
-- Write promotional captions
-- Generate content calendars
-- Platform-specific content (IG, TikTok, Twitter, FB)
+当用户提到以下需求时激活：
+- "监控竞品价格"
+- "库存低于X件时提醒我"
+- "追踪XX商品价格"
+- "竞品上新了吗"
+- "我的库存还剩多少"
 
-**Supported:** Instagram, TikTok, Twitter/X, Facebook, LinkedIn, Pinterest
+## 核心指令
 
-### 3. Analytics Dashboard (Free)
-Analyze e-commerce metrics and create actionable dashboards.
-
-**Use when:**
-- Analyze sales and revenue
-- Calculate KPIs (CAC, LTV, AOV, conversion rates)
-- Track trends
-- Generate business insights
-
-**Supported:** Google Analytics, Shopify, WooCommerce, Amazon Seller Central, Etsy, eBay
-
-## Quick Start
-
+### 竞品监控
 ```
-/competitive-monitor "Monitor Amazon laptop competitors"
-/social-poster "Create a week's Instagram posts for skincare"
-/analytics-dashboard "Analyze last month's sales data"
+监控 [竞品名称] 的 [商品类别]
+- 价格变动超过 [X]% 时告警
+- 新上架商品时通知
+- 评分变化时记录
 ```
 
-## Pricing
-
-| Skill | Price | Markets |
-|-------|-------|---------|
-| Competitive Monitor | $29/mo | US, SEA |
-| Social Poster | Free | All |
-| Analytics Dashboard | Free | All |
-
-Bundle discount available.
-
-## Installation
-
-```bash
-# Via OpenClaw
-/openclaw install ecommerce-skills
-
-# Or clone directly
-git clone https://github.com/your-org/ecommerce-skills.git ~/.openclaw/skills/ecommerce/
+### 库存预警
+```
+设置 [商品SKU] 库存预警
+- 低于 [数量] 件时发送提醒
+- 每周库存报告
 ```
 
-## Requirements
+### 价格追踪
+```
+追踪 [商品链接/名称] 价格
+- 降价超过 [X]% 时通知
+- 生成价格历史图表
+```
 
-- OpenClaw gateway running
-- Web browser access for scraping (Competitive Monitor)
-- API access for platform analytics (optional)
+## 约束
+
+- 仅监控公开可见信息
+- 不采集个人隐私数据
+- 遵守各平台robots.txt规则
