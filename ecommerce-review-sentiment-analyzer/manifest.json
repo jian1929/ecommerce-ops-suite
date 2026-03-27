@@ -1,0 +1,49 @@
+{
+  "ssp_version": "1.0",
+  "id": "auto-company/ecommerce-review-sentiment-analyzer",
+  "name": "E-Commerce Review Sentiment Analyzer",
+  "description": "Analyze customer review sentiment for e-commerce products. Extract insights from positive/negative reviews, identify improvement opportunities, and track sentiment trends over time.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Auto Company",
+    "signing_key_id": "0598843d593ea5f1"
+  },
+  "platform": "openclaw",
+  "openclaw_compat": ">=1.0.0",
+  "os_compat": [
+    "macos",
+    "linux"
+  ],
+  "entrypoints": [
+    {
+      "name": "main",
+      "file": "SKILL.md"
+    }
+  ],
+  "permissions": {
+    "network": {
+      "mode": "none"
+    },
+    "filesystem": {
+      "read_paths": [],
+      "write_paths": []
+    },
+    "exec": {
+      "allowed_commands": [],
+      "shell": false
+    }
+  },
+  "dependencies": [],
+  "danger_flags": [],
+  "pricing": {
+    "type": "free"
+  },
+  "install": {
+    "steps": [],
+    "required_inputs": []
+  },
+  "hashes": {
+    "SKILL.md": "a7b3c9d8e2f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4"
+  },
+  "created_at": "2026-03-27T04:40:25.000Z"
+}

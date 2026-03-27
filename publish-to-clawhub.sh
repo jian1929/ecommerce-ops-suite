@@ -2,12 +2,19 @@
 # ClawHub Publish Script for E-commerce Skills
 # Run this AFTER completing ClawHub GitHub OAuth login
 # Usage: ./publish-to-clawhub.sh
+#
+# IMPORTANT: Set SKILLS_DIR to your local clone of:
+#   https://github.com/jian1929/ecommerce-ops-suite
+#   Or run: SKILLS_DIR=/path/to/repo ./publish-to-clawhub.sh
 
 set -e
 
-SKILLS_DIR="/Users/jian1929/auto-company/projects/ecommerce-skills"
+# Auto-detect repo root (parent of this script's directory)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILLS_DIR="${SKILLS_DIR:-$SCRIPT_DIR}"
 
 echo "=== ClawHub Publish for E-commerce Skills ==="
+echo "Using skills directory: $SKILLS_DIR"
 
 # Check if logged in
 echo "Checking ClawHub login..."
