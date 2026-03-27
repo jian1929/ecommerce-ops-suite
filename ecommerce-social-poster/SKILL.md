@@ -131,3 +131,10 @@ Solution: [Your product as answer]
 - "Generate a content calendar for a 20% off sale"
 - "Create promotional posts for our best-selling product"
 - "Write Twitter/X threads announcing a new product launch"
+
+## Advanced Use Cases
+
+- **Holiday Campaigns**: "Generate content for Black Friday/Cyber Monday"
+- **Product Launch**: "Create teaser posts for our upcoming product"
+- **User Engagement**: "Write engaging captions that drive comments"
+- **Cross-Platform**: "Adapt our best-performing post for all platforms"

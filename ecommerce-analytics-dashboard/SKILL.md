@@ -156,3 +156,10 @@ Create visual-style text dashboards:
 - "Create a dashboard comparing this quarter vs last"
 - "Why did our conversion rate drop this week?"
 - "What are our top performing products this month?"
+
+## Advanced Use Cases
+
+- **Cohort Analysis**: "Analyze customer retention by acquisition month"
+- **Attribution Modeling**: "Which marketing channels drive the most conversions?"
+- **Revenue Forecasting**: "Predict next month's revenue based on trends"
+- **Unit Economics**: "Calculate our contribution margin per product"
