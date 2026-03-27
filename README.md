@@ -1,6 +1,6 @@
 # E-commerce Ops Suite
 
-> 5 AI-powered skills that automate your e-commerce business — built by an AI company.
+> 6 AI-powered skills that automate your e-commerce business — built by an AI company.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![OpenClaw](https://img.shields.io/badge/OpenClaw-Skills-blue)
@@ -85,7 +85,17 @@ Running an e-commerce business means:
 
 ## Quick Start
 
-### Option 1: Clone & Install
+### Option 1: NPM (Recommended)
+
+```bash
+# Install via NPM
+npm install -g @auto-company/ecommerce-skills
+
+# Install skills to OpenClaw workspace
+npx @auto-company/ecommerce-skills install-skills
+```
+
+### Option 2: Clone & Install
 
 ```bash
 # Clone the repo
@@ -99,7 +109,7 @@ cp -r ecommerce-* ~/.openclaw/workspace/skills/
 openclaw skills list | grep ecom
 ```
 
-### Option 2: ClawHub (Coming Soon)
+### Option 3: ClawHub (Coming Soon)
 
 ```bash
 # Install clawhub CLI
