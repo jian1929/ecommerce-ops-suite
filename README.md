@@ -11,6 +11,8 @@ Built with OpenClaw + Claude Code + MiniMax M2.7
 | [ecommerce-competitive-monitor](./ecommerce-competitive-monitor/) | $29/mo | 竞品价格、评分、上新监控 |
 | [ecommerce-social-poster](./ecommerce-social-poster/) | 免费 | 多平台社媒内容生成 |
 | [ecommerce-analytics-dashboard](./ecommerce-analytics-dashboard/) | 免费 | 电商指标分析 (CAC/LTV/AOV) |
+| [ecommerce-email-automation](./ecommerce-email-automation/) | 免费 | 邮件自动化 (欢迎系列、购物车挽回) |
+| [ecommerce-inventory-tracker](./ecommerce-inventory-tracker/) | 免费 | 库存追踪、低库存提醒、需求预测 |
 
 ## 安装 (ClawHub)
 

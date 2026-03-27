@@ -40,6 +40,24 @@ clawhub publish "$SKILLS_DIR/ecommerce-analytics-dashboard" \
   --tags "ecommerce,analytics,kpi-tracking" \
   --changelog "Initial release - e-commerce metrics and KPI analysis"
 
+# Publish ecommerce-inventory-tracker (free)
+echo "Publishing ecommerce-inventory-tracker..."
+clawhub publish "$SKILLS_DIR/ecommerce-inventory-tracker" \
+  --slug ecommerce-inventory-tracker \
+  --name "E-commerce Inventory Tracker" \
+  --version 1.0.0 \
+  --tags "ecommerce,inventory,stock-management" \
+  --changelog "Initial release - inventory tracking, low stock alerts, and demand forecasting"
+
+# Publish ecommerce-email-automation (free)
+echo "Publishing ecommerce-email-automation..."
+clawhub publish "$SKILLS_DIR/ecommerce-email-automation" \
+  --slug ecommerce-email-automation \
+  --name "E-commerce Email Automation" \
+  --version 1.0.0 \
+  --tags "ecommerce,email,automation,klaviyo,mailchimp" \
+  --changelog "Initial release - welcome series, cart abandonment, post-purchase flows, win-back campaigns"
+
 echo ""
-echo "=== All skills published successfully! ==="
+echo "=== All 5 skills published successfully! ==="
 echo "View at: https://clawhub.ai"
