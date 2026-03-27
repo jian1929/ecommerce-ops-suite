@@ -1,0 +1,89 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate skill structure
+        run: |
+          echo "=== Validating Skill Structure ==="
+
+          for skill in ecommerce-*/; do
+            echo "Checking $skill..."
+
+            # Check required files
+            if [ ! -f "$skill/SKILL.md" ]; then
+              echo "  ✗ Missing SKILL.md"
+              exit 1
+            fi
+
+            if [ ! -f "$skill/README.md" ]; then
+              echo "  ✗ Missing README.md"
+              exit 1
+            fi
+
+            if [ ! -f "$skill/manifest.json" ]; then
+              echo "  ✗ Missing manifest.json"
+              exit 1
+            fi
+
+            # Validate manifest.json
+            if ! jq -e . "$skill/manifest.json" > /dev/null 2>&1; then
+              echo "  ✗ Invalid manifest.json"
+              exit 1
+            fi
+
+            echo "  ✓ $skill validated"
+          done
+
+          echo ""
+          echo "=== All skills validated successfully ==="
+
+      - name: List skills
+        run: |
+          echo "Skills available:"
+          ls -d ecommerce-*/
+
+  test-npm-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Validate NPM package
+        run: |
+          echo "=== Validating NPM Package ==="
+
+          cd npm-pkg
+
+          # Check package.json
+          if ! jq -e . package.json > /dev/null 2>&1; then
+            echo "✗ Invalid package.json"
+            exit 1
+          fi
+
+          # List skills in package
+          echo "Skills in package:"
+          ls skills/
+
+          echo "✓ NPM package validated"

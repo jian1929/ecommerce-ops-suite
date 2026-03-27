@@ -1,0 +1,31 @@
+{
+  "name": "@auto-company/ecommerce-skills",
+  "version": "2.3.0",
+  "description": "AI-powered skills for e-commerce: competitor monitoring, social media automation, analytics, and more",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "install-skills": "node scripts/install-skills.js"
+  },
+  "keywords": [
+    "openclaw",
+    "ecommerce",
+    "automation",
+    "ai",
+    "shopify",
+    "amazon",
+    "competitor-analysis"
+  ],
+  "author": "auto-company",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jian1929/ecommerce-ops-suite"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=0.9.0"
+  }
+}
