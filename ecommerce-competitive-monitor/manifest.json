@@ -1,0 +1,46 @@
+{
+  "ssp_version": "1.0",
+  "id": "auto-company/ecommerce-competitive-monitor",
+  "name": "E-Commerce Competitive Monitor",
+  "description": "Monitor competitor prices, products, and reviews for e-commerce businesses",
+  "version": "1.0.0",
+  "author": {
+    "name": "Auto Company",
+    "signing_key_id": "0598843d593ea5f1"
+  },
+  "platform": "openclaw",
+  "openclaw_compat": ">=1.0.0",
+  "os_compat": [
+    "macos",
+    "linux"
+  ],
+  "entrypoints": [
+    {
+      "name": "main",
+      "file": "SKILL.md"
+    }
+  ],
+  "permissions": {
+    "network": {
+      "mode": "none"
+    },
+    "filesystem": {
+      "read_paths": [],
+      "write_paths": []
+    },
+    "exec": {
+      "allowed_commands": [],
+      "shell": false
+    }
+  },
+  "dependencies": [],
+  "danger_flags": [],
+  "install": {
+    "steps": [],
+    "required_inputs": []
+  },
+  "hashes": {
+    "SKILL.md": "8dbd7a9dbf0cc23f4de579caaa726b10089670d644683e89ee43e656a6c10b2e"
+  },
+  "created_at": "2026-03-27T02:03:09.000Z"
+}
