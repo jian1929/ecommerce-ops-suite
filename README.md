@@ -1,6 +1,6 @@
 # Ecommerce Ops Suite
 
-电商运营自动化技能包 - 竞品监控、库存预警、价格追踪三合一。
+电商运营自动化技能包 - 竞品监控、社媒发帖、数据分析三合一。
 
 Built with OpenClaw + Claude Code + MiniMax M2.7
 
@@ -8,23 +8,38 @@ Built with OpenClaw + Claude Code + MiniMax M2.7
 
 | 技能 | 价格 | 描述 |
 |------|------|------|
-| [competitor-monitor](./competitor-monitor/) | $29/mo | 竞品价格、评分、上新监控 |
-| [social-poster](./social-poster/) | 免费 | 多平台社媒内容生成 |
-| [analytics-dashboard](./analytics-dashboard/) | 免费 | 电商指标分析 (CAC/LTV/AOV) |
+| [ecommerce-competitive-monitor](./ecommerce-competitive-monitor/) | $29/mo | 竞品价格、评分、上新监控 |
+| [ecommerce-social-poster](./ecommerce-social-poster/) | 免费 | 多平台社媒内容生成 |
+| [ecommerce-analytics-dashboard](./ecommerce-analytics-dashboard/) | 免费 | 电商指标分析 (CAC/LTV/AOV) |
 
-## 安装
+## 安装 (ClawHub)
 
 ```bash
 # 安装 clawhub CLI
 npm install -g clawhub
 
-# 安装全部技能包
-clawhub install ecommerce-ops-suite
+# 登录 ClawHub (需要 GitHub 账号)
+clawhub login
 
-# 或单独安装
-clawhub install ecommerce-competitive-monitor
-clawhub install ecommerce-social-poster
-clawhub install ecommerce-analytics-dashboard
+# 发布技能 (开发者)
+./publish-to-clawhub.sh
+```
+
+## OpenClaw 直接安装
+
+技能已安装在 OpenClaw workspace，可直接使用：
+```
+openclaw skills list | grep ecom
+```
+
+## GitHub 安装
+
+```bash
+# 克隆仓库
+git clone https://github.com/jian1929/ecommerce-ops-suite.git
+
+# 复制到 OpenClaw workspace
+cp -r ecommerce-* ~/.openclaw/workspace/skills/
 ```
 
 ## 使用场景
