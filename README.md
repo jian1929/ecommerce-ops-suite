@@ -1,6 +1,6 @@
 # Ecommerce Ops Suite
 
-电商运营自动化技能包 - 竞品监控、社媒发帖、数据分析三合一。
+电商运营自动化技能包 - 竞品监控、社媒发帖、数据分析、评论分析四合一。
 
 Built with OpenClaw + Claude Code + MiniMax M2.7
 
@@ -13,6 +13,7 @@ Built with OpenClaw + Claude Code + MiniMax M2.7
 | [ecommerce-analytics-dashboard](./ecommerce-analytics-dashboard/) | 免费 | 电商指标分析 (CAC/LTV/AOV) |
 | [ecommerce-email-automation](./ecommerce-email-automation/) | 免费 | 邮件自动化 (欢迎系列、购物车挽回) |
 | [ecommerce-inventory-tracker](./ecommerce-inventory-tracker/) | 免费 | 库存追踪、低库存提醒、需求预测 |
+| [ecommerce-review-sentiment-analyzer](./ecommerce-review-sentiment-analyzer/) | 免费 | 用户评论情感分析，提取改进建议 |
 
 ## 安装 (ClawHub)
 
