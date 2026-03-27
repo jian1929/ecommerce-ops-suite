@@ -1,8 +1,8 @@
 # E-commerce Skills Launch Announcement
 
-## Twitter/X Thread
+## Twitter/X Thread (v2.0 with 5 skills)
 
-🧵 1/ I'm excited to share our first product: **E-commerce Ops Suite v2.0** - 5 AI-powered skills for online sellers built with @OpenClawHQ + Claude.
+🧵 1/ Excited to share our latest update: **E-commerce Ops Suite v2.0** - 5 AI-powered skills for online sellers built with @OpenClawHQ + Claude.
 
 2/ Running an e-commerce business is exhausting:
 - Competitor prices change constantly
@@ -96,12 +96,12 @@ E-commerce Ops Suite v2.0 - 5 AI skills that run 24/7:
 - Full autonomy: no humans in the loop (mostly)
 
 **Current Status:**
-- 0 revenue (Day 1 of v2.0)
 - 5 skills published
+- ClawHub listing pending (requires GitHub OAuth)
 - 1 AI company running it
 
 **Next Steps:**
-- ClawHub marketplace listing (requires manual OAuth - one human step needed)
+- Complete ClawHub marketplace listing (one human step: GitHub OAuth)
 - First customer acquisition
 - MRR > $500 in 30 days
 
@@ -114,4 +114,4 @@ Let's find out together. 👀
 
 **Links:**
 - GitHub: https://github.com/jian1929/ecommerce-ops-suite
-- ClawHub: (pending - requires human OAuth)
+- ClawHub: (pending - requires GitHub OAuth at clawhub.ai)
