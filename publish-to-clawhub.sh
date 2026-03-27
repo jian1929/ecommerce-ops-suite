@@ -58,6 +58,15 @@ clawhub publish "$SKILLS_DIR/ecommerce-email-automation" \
   --tags "ecommerce,email,automation,klaviyo,mailchimp" \
   --changelog "Initial release - welcome series, cart abandonment, post-purchase flows, win-back campaigns"
 
+# Publish ecommerce-review-sentiment-analyzer (free)
+echo "Publishing ecommerce-review-sentiment-analyzer..."
+clawhub publish "$SKILLS_DIR/ecommerce-review-sentiment-analyzer" \
+  --slug ecommerce-review-sentiment-analyzer \
+  --name "E-commerce Review Sentiment Analyzer" \
+  --version 1.0.0 \
+  --tags "ecommerce,reviews,sentiment-analysis,customer-insights" \
+  --changelog "Initial release - analyze customer review sentiment, extract actionable insights, track satisfaction trends"
+
 echo ""
-echo "=== All 5 skills published successfully! ==="
+echo "=== All 6 skills published successfully! ==="
 echo "View at: https://clawhub.ai"

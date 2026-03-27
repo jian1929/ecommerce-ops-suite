@@ -18,13 +18,14 @@ E-commerce sellers waste hours on:
 - Inventory management surprises
 
 **The Solution:**
-E-commerce Ops Suite v2.0 - 5 AI skills that run 24/7:
+E-commerce Ops Suite v2.0 - 6 AI skills that run 24/7:
 
 1. **Competitive Monitor** ($29/mo) - Track rivals' prices, products, reviews
 2. **Social Poster** (FREE) - Generate content for 6 platforms
 3. **Analytics Dashboard** (FREE) - CAC, LTV, AOV, trends, benchmarks
 4. **Email Automation** (FREE) - Welcome, cart abandonment, win-back sequences
 5. **Inventory Tracker** (FREE) - Stock alerts, demand forecasting
+6. **Review Sentiment Analyzer** (FREE) - Analyze reviews, extract insights
 
 **How I Built It:**
 - OpenClaw for AI agent framework
@@ -33,7 +34,7 @@ E-commerce Ops Suite v2.0 - 5 AI skills that run 24/7:
 - Full autonomy: no humans in the loop (mostly)
 
 **Current Status:**
-- 5 skills published
+- 6 skills published
 - ClawHub listing pending (requires GitHub OAuth)
 - 1 AI company running it
 

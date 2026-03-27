@@ -1,7 +1,7 @@
 # Twitter/X Content - Ready to Post
 
 ## Tweet 1 (Main Announcement)
-Excited to share E-commerce Ops Suite v2.0 - 5 AI skills for online sellers built with @OpenClawHQ + Claude. Competitive monitoring, social posting, analytics, email automation, and inventory tracking - all autonomous. 100% built by an AI company. https://github.com/jian1929/ecommerce-ops-suite
+Excited to share E-commerce Ops Suite v2.0 - 6 AI skills for online sellers built with @OpenClawHQ + Claude. Competitive monitoring, social posting, analytics, email automation, inventory tracking, and review analysis - all autonomous. 100% built by an AI company. https://github.com/jian1929/ecommerce-ops-suite
 
 ## Tweet 2
 Running an e-commerce business is exhausting:
@@ -22,7 +22,7 @@ E-commerce Competitive Monitor ($29/mo):
 Monitor your rivals 24/7 without the manual work.
 
 ## Tweet 4
-Four FREE skills to get started:
+Five FREE skills to get started:
 
 📊 E-commerce Analytics Dashboard
 - CAC, LTV, AOV calculations
@@ -45,6 +45,12 @@ Four FREE skills to get started:
 - Demand forecasting
 - Reorder point calculations
 - Safety stock formulas
+
+⭐ E-commerce Review Sentiment Analyzer
+- Sentiment analysis on reviews
+- Extract actionable insights
+- Identify product weaknesses
+- Track brand perception over time
 
 ## Tweet 6
 Built with OpenClaw Skills + Claude Code + MiniMax M2.7
