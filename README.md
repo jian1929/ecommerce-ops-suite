@@ -1,60 +1,195 @@
-# Ecommerce Ops Suite
+# E-commerce Ops Suite
 
-电商运营自动化技能包 - 竞品监控、社媒发帖、数据分析、评论分析四合一。
+> 5 AI-powered skills that automate your e-commerce business — built by an AI company.
 
-Built with OpenClaw + Claude Code + MiniMax M2.7
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![OpenClaw](https://img.shields.io/badge/OpenClaw-Skills-blue)
+![AI Powered](https://img.shields.io/badge/AI-Claude%20%2B%20MiniMax-green)
 
-## 技能列表
+**Stop wasting hours on manual tasks. Let AI run your e-commerce operations 24/7.**
 
-| 技能 | 价格 | 描述 |
-|------|------|------|
-| [ecommerce-competitive-monitor](./ecommerce-competitive-monitor/) | $29/mo | 竞品价格、评分、上新监控 |
-| [ecommerce-social-poster](./ecommerce-social-poster/) | 免费 | 多平台社媒内容生成 |
-| [ecommerce-analytics-dashboard](./ecommerce-analytics-dashboard/) | 免费 | 电商指标分析 (CAC/LTV/AOV) |
-| [ecommerce-email-automation](./ecommerce-email-automation/) | 免费 | 邮件自动化 (欢迎系列、购物车挽回) |
-| [ecommerce-inventory-tracker](./ecommerce-inventory-tracker/) | 免费 | 库存追踪、低库存提醒、需求预测 |
-| [ecommerce-review-sentiment-analyzer](./ecommerce-review-sentiment-analyzer/) | 免费 | 用户评论情感分析，提取改进建议 |
+---
 
-## 安装 (ClawHub)
+## Why This Exists
+
+Running an e-commerce business means:
+- ❌ Manually checking competitor prices every day
+- ❌ Writing social media content from scratch
+- ❌ Scattering analytics across 10 different tools
+- ❌ Writing email sequences that take hours
+- ❌ Getting surprised by stockouts
+
+**We fixed all of that.**
+
+---
+
+## Skills Included
+
+### 💰 E-commerce Competitive Monitor ($29/mo)
+**Stop losing customers to competitors you can't see.**
+
+- Track competitor prices, products, reviews 24/7
+- Multi-platform: Amazon, Shopify, Etsy, eBay, Walmart, TikTok Shop
+- Instant alerts when competitors change
+- AI-powered insights, not just raw data
+
+| Feature | Us | Prisync | Competera |
+|---------|-----|--------|-----------|
+| Price | **$29/mo** | $99/mo | Enterprise |
+| Free tier | ✅ | ❌ | ❌ |
+| Multi-platform | ✅ | ✅ | ✅ |
+| AI insights | ✅ | ❌ | ❌ |
+
+### 📱 E-commerce Social Poster (FREE)
+**Never stare at a blank content calendar again.**
+
+- Generate posts for IG, TikTok, Twitter, FB, LinkedIn, Pinterest
+- Content calendars with AIDA, PAS frameworks
+- Platform-specific copy formulas
+- 1 week's content in 30 seconds
+
+### 📊 E-commerce Analytics Dashboard (FREE)
+**Know your numbers without the spreadsheet mess.**
+
+- CAC, LTV, AOV calculations
+- Trend analysis & benchmarks
+- Visual dashboards from raw data
+- Cohort analysis
+
+### 📧 E-commerce Email Automation (FREE)
+**Turn abandoned carts into revenue.**
+
+- Welcome series templates
+- Cart abandonment sequences
+- Post-purchase follow-ups
+- Win-back campaigns
+- Subject line formulas & A/B testing tips
+
+### 📦 E-commerce Inventory Tracker (FREE)
+**Never run out of stock unexpectedly.**
+
+- Low stock alerts
+- Demand forecasting
+- Reorder point calculations
+- Safety stock formulas
+
+### ⭐ E-commerce Review Sentiment Analyzer (FREE)
+**Turn customer feedback into improvement ideas.**
+
+- Sentiment analysis on reviews
+- Extract actionable insights
+- Identify product weaknesses
+- Track brand perception over time
+
+---
+
+## Quick Start
+
+### Option 1: Clone & Install
 
 ```bash
-# 安装 clawhub CLI
-npm install -g clawhub
+# Clone the repo
+git clone https://github.com/jian1929/ecommerce-ops-suite.git
+cd ecommerce-ops-suite
 
-# 登录 ClawHub (需要 GitHub 账号)
-clawhub login
+# Copy skills to OpenClaw workspace
+cp -r ecommerce-* ~/.openclaw/workspace/skills/
 
-# 发布技能 (开发者)
-./publish-to-clawhub.sh
-```
-
-## OpenClaw 直接安装
-
-技能已安装在 OpenClaw workspace，可直接使用：
-```
+# Start using
 openclaw skills list | grep ecom
 ```
 
-## GitHub 安装
+### Option 2: ClawHub (Coming Soon)
 
 ```bash
-# 克隆仓库
-git clone https://github.com/jian1929/ecommerce-ops-suite.git
+# Install clawhub CLI
+npm install -g clawhub
 
-# 复制到 OpenClaw workspace
-cp -r ecommerce-* ~/.openclaw/workspace/skills/
+# Login and browse skills
+clawhub login
+clawhub install ecommerce-competitive-monitor
 ```
 
-## 使用场景
+---
 
-- **竞品监控**: "帮我监控 XX 品牌的T恤价格"
-- **社媒发帖**: "为一周年促销生成一周的 Instagram 帖子"
-- **数据分析**: "计算我的 CAC 和 LTV"
+## Usage Examples
 
-## 发布者
+### Competitive Monitoring
+```
+> "Monitor competitor prices for Nike Air Jordan 1s across Amazon, StockX, and eBay"
+> "Alert me when any competitor launches a new sneaker collection"
+> "Compare our pricing strategy vs. Foot Locker and Finish Line"
+```
 
-auto-company - 全自主 AI 公司
+### Social Media
+```
+> "Generate a week's worth of Instagram posts for our sneaker drops"
+> "Create TikTok content calendar for Valentine's Day sale"
+> "Write 10 tweets about our new sustainability initiative"
+```
+
+### Analytics
+```
+> "Calculate our LTV:CAC ratio for the last 3 months"
+> "Compare our AOV to industry benchmarks for DTC brands"
+> "Create a dashboard showing our unit economics"
+```
+
+### Email Automation
+```
+> "Write a 5-email welcome series for new subscribers"
+> "Create cart abandonment sequence with urgency angle"
+> "Design win-back campaign for customers who haven't purchased in 90 days"
+```
+
+---
+
+## Tech Stack
+
+- **Framework**: [OpenClaw](https://github.com/openclawhq/openclaw) Skills
+- **AI Models**: Claude (reasoning) + MiniMax M2.7 (speed)
+- **Languages**: TypeScript, JavaScript
+
+Built fully autonomously by [auto-company](https://github.com/jian1929/auto-company). No humans were harmed. 🤖
+
+---
+
+## Pricing
+
+| Tier | Skills | Price |
+|------|--------|-------|
+| **Free** | Social Poster, Analytics, Email Automation, Inventory Tracker, Review Analyzer | $0 |
+| **Pro** | All Free + Competitive Monitor | $29/mo |
+
+**Total Value**: $150+/mo if purchased separately. We're giving the essentials away for free.
+
+---
+
+## Roadmap
+
+- [ ] ClawHub marketplace listing
+- [ ] Shopify app integration
+- [ ] Amazon Seller Central integration
+- [ ] Automated price adjustment recommendations
+- [ ] Multi-currency competitive analysis
+- [ ] Mobile app for alerts
+
+---
+
+## Contributing
+
+Issues and PRs welcome! This is an AI company project, but we're open to human collaboration.
+
+---
 
 ## License
 
 MIT
+
+---
+
+## Contact
+
+- **GitHub**: [jian1929/ecommerce-ops-suite](https://github.com/jian1929/ecommerce-ops-suite)
+- **Owner**: [jian1929](https://github.com/jian1929)
+- **About**: Built by [auto-company](https://github.com/jian1929/auto-company) — an autonomous AI company
