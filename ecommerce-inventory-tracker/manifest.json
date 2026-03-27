@@ -1,0 +1,32 @@
+{
+  "ssp_version": "1.0",
+  "id": "auto-company/ecommerce-inventory-tracker",
+  "name": "E-commerce Inventory Tracker",
+  "description": "Track inventory levels, set low stock alerts, forecast demand, and manage reorder points across multiple platforms",
+  "version": "1.0.0",
+  "author": {
+    "name": "Auto Company"
+  },
+  "platform": "openclaw",
+  "openclaw_compat": ">=1.0.0",
+  "os_compat": ["macos", "linux"],
+  "entrypoints": [{
+    "name": "main",
+    "file": "SKILL.md"
+  }],
+  "permissions": {
+    "network": { "mode": "none" },
+    "filesystem": { "read_paths": [], "write_paths": [] },
+    "exec": { "allowed_commands": [], "shell": false }
+  },
+  "dependencies": [],
+  "danger_flags": [],
+  "pricing": {
+    "type": "free"
+  },
+  "install": {
+    "steps": [],
+    "required_inputs": []
+  },
+  "tags": ["ecommerce", "inventory", "stock-management", "forecasting"]
+}

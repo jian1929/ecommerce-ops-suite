@@ -21,16 +21,52 @@ jobs:
       - name: Install clawhub CLI
         run: npm install -g clawhub
 
-      - name: Publish skill bundle
+      - name: Publish ecommerce-competitive-monitor (paid)
         env:
           CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
         run: |
-          clawhub publish . --slug ecommerce-ops-suite --tags "ecommerce,automation,competitive-analysis"
+          clawhub publish ecommerce-competitive-monitor \
+            --slug ecommerce-competitive-monitor \
+            --name "E-commerce Competitive Monitor" \
+            --tags "ecommerce,competitor-analysis,price-monitoring" \
+            --changelog "Initial release - competitor monitoring"
 
-      - name: Publish individual skills
+      - name: Publish ecommerce-social-poster (free)
         env:
           CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
         run: |
-          clawhub publish competitive-monitor --slug ecommerce-competitive-monitor --tags "ecommerce,competitor,monitoring"
-          clawhub publish social-poster --slug ecommerce-social-poster --tags "ecommerce,social-media,automation"
-          clawhub publish analytics-dashboard --slug ecommerce-analytics-dashboard --tags "ecommerce,analytics,dashboard"
+          clawhub publish ecommerce-social-poster \
+            --slug ecommerce-social-poster \
+            --name "E-commerce Social Poster" \
+            --tags "ecommerce,social-media,content-generation" \
+            --changelog "Initial release - social media content"
+
+      - name: Publish ecommerce-analytics-dashboard (free)
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+        run: |
+          clawhub publish ecommerce-analytics-dashboard \
+            --slug ecommerce-analytics-dashboard \
+            --name "E-commerce Analytics Dashboard" \
+            --tags "ecommerce,analytics,kpi-tracking" \
+            --changelog "Initial release - analytics dashboard"
+
+      - name: Publish ecommerce-email-automation (free)
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+        run: |
+          clawhub publish ecommerce-email-automation \
+            --slug ecommerce-email-automation \
+            --name "E-commerce Email Automation" \
+            --tags "ecommerce,email-marketing,automation" \
+            --changelog "Initial release - email automation sequences"
+
+      - name: Publish ecommerce-inventory-tracker (free)
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+        run: |
+          clawhub publish ecommerce-inventory-tracker \
+            --slug ecommerce-inventory-tracker \
+            --name "E-commerce Inventory Tracker" \
+            --tags "ecommerce,inventory,stock-management" \
+            --changelog "Initial release - inventory tracking"

@@ -97,9 +97,23 @@ Provide structured findings:
 - International platforms may have different data availability
 - Always respect robots.txt and platform Terms of Service
 
+## Quick Start
+
+1. **Enter the competitor URL** or product listing
+2. **Define your products** to compare against
+3. **Set monitoring frequency**: daily/weekly alerts
+4. **Receive actionable reports** with specific recommendations
+
 ## Example Prompts
 
 - "Monitor Amazon competitor pricing for our laptop products"
 - "Track new product launches from our top 5 Shopify competitors"
 - "Analyze customer reviews from our main competitor on Etsy"
 - "Set up weekly competitive intelligence reports"
+
+## Advanced Use Cases
+
+- **Price Elasticity Analysis**: "What's the optimal price point given competitor pricing?"
+- **Product Gap Identification**: "What products do competitors offer that we don't?"
+- **Seasonal Trend Analysis**: "How do competitor prices change during holiday seasons?"
+- **Review Sentiment Tracking**: "Track competitor review ratings over time"

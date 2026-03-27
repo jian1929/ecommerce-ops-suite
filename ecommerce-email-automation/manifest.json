@@ -1,0 +1,32 @@
+{
+  "ssp_version": "1.0",
+  "id": "auto-company/ecommerce-email-automation",
+  "name": "E-commerce Email Automation",
+  "description": "Create automated email sequences for welcome, cart abandonment, post-purchase, and re-engagement campaigns",
+  "version": "1.0.0",
+  "author": {
+    "name": "Auto Company"
+  },
+  "platform": "openclaw",
+  "openclaw_compat": ">=1.0.0",
+  "os_compat": ["macos", "linux"],
+  "entrypoints": [{
+    "name": "main",
+    "file": "SKILL.md"
+  }],
+  "permissions": {
+    "network": { "mode": "none" },
+    "filesystem": { "read_paths": [], "write_paths": [] },
+    "exec": { "allowed_commands": [], "shell": false }
+  },
+  "dependencies": [],
+  "danger_flags": [],
+  "pricing": {
+    "type": "free"
+  },
+  "install": {
+    "steps": [],
+    "required_inputs": []
+  },
+  "tags": ["ecommerce", "email-marketing", "automation", "customer-retention"]
+}

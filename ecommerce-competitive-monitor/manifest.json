@@ -35,6 +35,12 @@
   },
   "dependencies": [],
   "danger_flags": [],
+  "pricing": {
+    "type": "paid",
+    "amount": 2900,
+    "currency": "usd",
+    "period": "month"
+  },
   "install": {
     "steps": [],
     "required_inputs": []
