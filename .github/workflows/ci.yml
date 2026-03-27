@@ -1,0 +1,124 @@
+name: Skill Validation CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check skill structure
+        run: |
+          for dir in ecommerce-*/; do
+            if [ -f "${dir}SKILL.md" ]; then
+              echo "✓ ${dir} has SKILL.md"
+            else
+              echo "✗ ${dir} missing SKILL.md"
+              exit 1
+            fi
+          done
+
+      - name: Validate SKILL.md format
+        run: |
+          npm install -g ajv ajv-formats
+          for dir in ecommerce-*/; do
+            echo "Validating ${dir}..."
+            node -e "
+              const fs = require('fs');
+              const content = fs.readFileSync('${dir}SKILL.md', 'utf8');
+              const frontmatter = content.match(/^---\n([\s\S]*?)\n---/);
+              if (!frontmatter) {
+                console.error('Missing frontmatter in ${dir}');
+                process.exit(1);
+              }
+              console.log('✓ ${dir} frontmatter valid');
+            "
+          done
+
+      - name: Check for README in each skill
+        run: |
+          for dir in ecommerce-*/; do
+            if [ -f "${dir}README.md" ]; then
+              echo "✓ ${dir} has README.md"
+            fi
+          done
+
+  test-skill-descriptions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check skill descriptions are unique
+        run: |
+          node -e "
+            const fs = require('fs');
+            const { execSync } = require('child_process');
+
+            const dirs = execSync('ls -d ecommerce-*/').toString().trim().split('\n');
+            const descriptions = [];
+
+            for (const dir of dirs) {
+              const content = fs.readFileSync(dir + 'SKILL.md', 'utf8');
+              const match = content.match(/^---\n([\s\S]*?)\n---/);
+              if (match) {
+                const yaml = match[1];
+                const nameMatch = yaml.match(/name:\s*(.+)/);
+                const descMatch = yaml.match(/description:\s*(.+)/);
+                if (nameMatch && descMatch) {
+                  descriptions.push({ dir: dir.trim(), name: nameMatch[1].trim(), desc: descMatch[1].trim() });
+                }
+              }
+            }
+
+            // Check for duplicates
+            const descSet = new Set(descriptions.map(d => d.desc));
+            if (descSet.size !== descriptions.length) {
+              console.error('Duplicate descriptions found!');
+              process.exit(1);
+            }
+
+            console.log('✓ All', descriptions.length, 'skills have unique descriptions');
+            descriptions.forEach(d => console.log('  -', d.name, ':', d.desc.substring(0, 50) + '...'));
+          "
+
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdown lint
+        run: |
+          npm install -g markdownlint-cli
+          markdownlint "ecommerce-*/**/*.md" --ignore node_modules || true
+
+  count-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count and report skills
+        run: |
+          count=$(ls -d ecommerce-*/ | wc -l | tr -d ' ')
+          echo "Total skills: $count"
+
+          if [ "$count" -lt 5 ]; then
+            echo "Warning: Less than 5 skills, consider adding more"
+          fi
+
+          echo "Skills breakdown:"
+          ls -d ecommerce-*/ | sed 's/\/$//' | while read dir; do
+            echo "  - $dir"
+          done
